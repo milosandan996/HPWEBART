@@ -1,0 +1,99 @@
+header{
+    position: relative;
+    background-color: white;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+    div#top{
+        nav.navbar{
+            a{
+                .logoHeader{
+                    height: 11rem;
+                }
+            }
+            button{
+                border: 2px solid $logoLight;
+                border-radius: 1rem;
+                padding: 7px;
+                span{
+                    display: block;
+                    height: 3px;
+                    width: 3rem;
+                    background-color: $logoLight;
+                    margin-bottom: 6px;
+                    &:last-of-type{
+                        margin-bottom: 0px;
+                    }
+                }
+            }
+            div{
+                ul{
+                    li{
+                        a{
+                            text-transform: uppercase;
+                            font-size: 1.7rem;
+                            font-family: $headingFont !important;
+                            color: $logoLight;
+                            &:hover{
+                                color: $logoDark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active{
+    color: $logoDark !important;
+}
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px 0px;
+}
+li > a {
+    color: #333;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+li > a::after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 4px;
+    width: 0;
+    top: 5px;
+    background: transparent;
+    transition: all 0.3s;
+}
+li > a:hover::after{
+    width: 100%;
+    background: $logoDark;
+    border-radius: 5px;
+}
+li.active > a::after{
+    width: 100%;
+    background: $logoDark;
+    border-radius: 5px;
+}
+
+#top{
+    width: 100%;
+    margin-left: 1rem !important;
+}
+
+#top.show{
+    position: fixed;
+    z-index: 1000;
+    top: 0; /* Prikaz menija na vrhu ekrana */
+    background-color: white;
+    left: -1rem;
+    width: 100%;
+}
+
+#top.show #top{
+    margin: 1rem !important;
+}
+

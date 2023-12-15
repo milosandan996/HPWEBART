@@ -1,0 +1,18 @@
+footer{
+    background-color: white;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    div.container{
+        padding: 0 !important;
+        a.logoFooter{
+            img{
+                height: 11rem;
+            }
+        }
+        a{
+            color: $logoDark;
+            text-align: center;
+        }
+    }
+}
+

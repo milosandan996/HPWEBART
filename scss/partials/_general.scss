@@ -1,0 +1,147 @@
+
+$aFont:'Josefin Sans', sans-serif;
+$pFont: 'Josefin Sans', sans-serif;
+$headingFont: 'Cinzel', serif;
+$backgroundColor: linear-gradient(45deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+$backgroundHover: linear-gradient(45deg, #FCF6BA, #BF953F, #B38728,  #AA771C, #FBF5B7);
+$logoLight: #d6a86b;
+$logoDark: #876241;
+$logoMedium: #9f774e;
+$grayBlog: #424242;
+body {
+    margin: 0;
+    padding: 1rem;
+    background: $backgroundColor;
+    color: white;
+}
+p::selection{
+    background-color: $logoLight;
+    color: white;
+}
+h1::selection{
+    background-color: $logoLight;
+    color: white;
+}
+h2::selection{
+    background-color: $logoLight;
+    color: white;
+}
+h3::selection{
+    background-color: $logoLight;
+    color: white;
+}
+h4::selection{
+    background-color: $logoLight;
+    color: white;
+}
+strong::selection{
+    background-color: $logoLight;
+    color: white;
+}
+img{
+    max-width: 100%;
+}
+html{
+    font-size: 10px;
+    // 1 rem
+}
+html p{
+    font-size: 1.9rem !important;
+    font-family: $pFont;
+}
+html a{
+    font-size: 1.6rem;
+    font-family: $aFont;
+    text-decoration: none !important;
+}
+h1{
+    font-family: $headingFont;
+}
+h2{
+    font-family: $headingFont;
+}
+h3{
+    font-family: $headingFont;
+}
+h4{
+    font-family: $headingFont;
+}
+h5{
+    font-family: $headingFont;
+}
+h6{
+    font-family: $headingFont;
+}
+.mb-6{
+    margin-bottom: 5rem;
+}
+.mt-6{
+    margin-top: 5rem;
+}
+.mr-6{
+    margin-right: 5rem;
+}
+.ml-6{
+    margin-left: 5rem;
+}
+.pagination{
+    margin: 9rem auto;
+    text-align: center;
+    a{
+        color: $grayBlog;
+        padding: 2rem 4rem;
+        border-radius: 30px;
+        background: $backgroundColor;
+        font-size: 2rem;
+        &:hover{
+            background: $backgroundHover;
+            color: white;
+        }
+    }
+}
+.paging{
+    padding: 9rem 0rem;
+    text-align: center;
+    a{
+        color: white;
+        padding: 2rem 1rem;
+        border-radius: 50%;
+        background: $backgroundHover;
+        font-size: 2rem;
+        width: 100px !important;
+        &:hover{
+            background: $backgroundColor;
+            color: $grayBlog;
+        }
+    }
+    .activePage{
+        background: $backgroundColor;
+        color: $grayBlog;
+        &:hover{
+            background: $backgroundHover;
+            color: white;
+        }
+    }
+}
+a.butt{
+    display: inline;
+    font-size: 1.8rem;
+    color: $grayBlog !important;
+    padding: 8px 8px !important;
+    border-radius: 2rem;
+    background: $backgroundColor;
+    &:hover{
+        background: $backgroundHover;
+        color: white !important;
+    }
+}
+
+
+
+.numberBanner{
+    background: linear-gradient(to bottom, turquoise,darkorchid,deeppink,orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: inherit;
+    font-family: inherit;
+}

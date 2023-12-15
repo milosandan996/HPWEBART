@@ -1,0 +1,93 @@
+.card-custom {
+    margin: 0 auto;
+    width: 95%;
+    overflow: hidden;
+    min-height: 45rem;
+    -webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.3) !important;
+    -moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.3) !important;
+    box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.3) !important;
+    margin-bottom: 5rem;
+    border-radius: 2rem;
+}
+.card-custom-img {
+    height: 20rem;
+    min-height: 20rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-color: inherit;
+}
+/* First border-left-width setting is a fallback */
+.card-custom-img::after {
+    position: absolute;
+    content: '';
+    top: 161px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-top-width: 4rem;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 54.5rem;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: inherit;
+}
+.card-custom-avatar img {
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+    position: absolute;
+    top: 120px;
+    left: 2rem;
+    width: 80px;
+    height: 65px;
+    background-color: white;
+}
+.blockquote-custom {
+    position: relative;
+    font-size: 1.1rem;
+    margin-bottom: 5rem;
+    &:hover{
+        background: $backgroundColor !important;
+        color: $grayBlog;
+    }
+    &:hover .blockquote-footer{
+        color: $grayBlog;
+    }
+}
+.blockquote-custom-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -25px;
+    left: 50px;
+    background-color: $logoLight !important;
+    border: 3px solid white;
+}
+.btn-price{
+    border: 1px solid $logoDark;
+    padding: 8px 12px;
+    color: $grayBlog;
+    background: $backgroundColor;
+    border-radius: 10px;
+    font-weight: 600;
+    &:hover{
+        background: $backgroundHover;
+        color: white;
+    }
+}
+.card-footer{
+    margin-bottom: 1rem !important;
+    margin-top: 1rem !important;
+}
+
+
+.card-title{
+    font-size: 2.2rem;
+}

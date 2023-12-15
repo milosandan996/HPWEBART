@@ -1,0 +1,84 @@
+
+
+.instagram{
+    margin: 100px auto;
+    width: 1080px;
+    height: 1350px;
+    background: linear-gradient(45deg, white, $logoLight, $logoDark);
+    border: 5px solid white;
+    position: relative;
+    .white{
+        background-color: rgba(214, 168, 107, 0);
+        width: 1040px;
+        height: 1040px;
+        margin: 0 auto;
+        margin-top: 150px;
+        border-radius: 30px;
+    }
+}
+
+.neonText {
+    color: #876241;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px $logoLight, 0 0 30px $logoLight, 0 0 40px $logoLight, 0 0 55px $logoLight, 0 0 75px $logoLight;
+}
+
+.instagram2{
+    margin: 100px auto;
+    width: 1080px;
+    height: 1350px;
+    background: linear-gradient(135deg, $logoLight, white, $logoLight);
+    border: 5px solid white;
+    position: relative;
+    .white2{
+        background-color: $logoMedium;
+        width: 900px;
+        height: 900px;
+        margin: 0 auto;
+        margin-top: 210px;
+        border-radius: 30px;
+    }
+}
+
+.instagram3{
+    margin: 100px auto;
+    width: 1080px;
+    height: 1350px;
+    background: linear-gradient( #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    border: 5px solid white;
+    position: relative;
+    .white3{
+        background-color: $logoMedium;
+        width: 900px;
+        height: 900px;
+        margin: 0 auto;
+        margin-top: 210px;
+        border-radius: 30px;
+    }
+}
+
+
+%igitems{
+    margin: 100px auto;
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    position: relative;
+}
+
+.instagram4{
+    @extend %igitems;
+    background-color: turquoise;
+}
+.instagram5{
+    @extend %igitems;
+    background-color: darkorchid;
+}
+.instagram6{
+    @extend %igitems;
+    background-color: deeppink;
+}
+.instagram7{
+    @extend %igitems;
+    background-color: orange;
+}
+

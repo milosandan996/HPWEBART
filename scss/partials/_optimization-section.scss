@@ -1,0 +1,53 @@
+#section-optimization{
+    background-color: white !important;
+    padding-top: 7rem;
+    border-radius:  0px 0px 2rem 2rem !important;
+    color: $logoDark;
+    article.row{
+        margin-bottom: 7rem !important;
+        h2{
+            margin-top: 1rem;
+            font-weight: 700;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+        p{
+            font-size: 1.8rem;
+        }
+        h3{
+            font-weight: 700;
+            font-size: 2.5rem;
+        }
+        img{
+            //border-radius:  0px 0px 20px 20px !important;
+        }
+    }
+    article.last{
+        margin-bottom: 0 !important;
+    }
+
+}
+.seo-kontakt{
+    padding-bottom: 7rem;
+    padding-top: 7rem;
+    a{
+        font-size: 3.5rem !important;
+    }
+    p{
+        font-size: 3.5rem !important;
+    }
+}
+
+@media(min-width: 992px){
+    .phone{
+        display: none;
+    }
+}
+
+@media(max-width: 992px){
+    .comp{
+        display: none;
+    }
+}
+
+
