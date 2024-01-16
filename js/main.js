@@ -224,6 +224,18 @@ $(document).ready(function () {
 
 });
 
+const app1 = Vue.createApp({
+    data(){
+        return{
+            name: 'milos'
+        };
+    }
+});
+    
+app1.mount('#app');
+
+    
+
 
 
 

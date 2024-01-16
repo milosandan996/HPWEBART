@@ -203,3 +203,7 @@
     //include 'partials/last3posts.php';
     ?>
 </section>
+
+<div id="app">
+    {{name}}
+</div>

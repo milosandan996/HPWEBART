@@ -8,7 +8,7 @@
     </div>
 </footer>
 
-
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="js/jquery.min.js"></script>
 <script src="../js/jquery.plate.js" type="text/javascript"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
