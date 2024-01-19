@@ -428,12 +428,14 @@ include 'partials/header.php';
                 </div>
             </div>
         </div>
-        <div class="animation container text-center seo-kontakt" data-animation="typewriter">
-            <p>
-                Ukoliko želite da Vam mi izradimo web sajt nećemo Vas razočarati.
-                <br>
-                Možete nas pozvati na <a class="numberBanner" href="tel:00381606562111">060/656-21-11</a> ili nam se javite na <a class="numberBanner" href="mailto:office@hp-web-art.rs">email</a>. 
-            </p>
+        <div id="app">
+            <div :class="animationClass" class="container text-center seo-kontakt" :data-animation="animationAttribute">
+                <p>
+                    Ukoliko želite da Vam mi izradimo web sajt nećemo Vas razočarati.
+                    <br>
+                    Možete nas pozvati na <a class="numberBanner" href="tel:00381606562111">060/656-21-11</a> ili nam se javite na <a class="numberBanner" href="mailto:office@hp-web-art.rs">email</a>. 
+                </p>
+            </div>
         </div>
     </section>
     <?php

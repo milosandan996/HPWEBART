@@ -7,15 +7,17 @@ include 'partials/header.php';
     ?>
     <section id="section-contact2">
         <div class="container">
-            <div class="text-center animation" data-animation="typewriter">
-                <h3>
-                    UNAPREDITE SVOJE POSLOVANJE KROZ MODERNU <a class="numberBanner">WEB PRISUTNOST</a>,<br>
-                    <a class="numberBanner">SEO OPTIMIZACIJU</a> ILI ATRAKTIVAN 
-                    <a class="numberBanner">DIZAJN</a>. MI SMO TU DA VAM <br> POMOGNEMO.
-                    KONTAKTIRAJTE NAS DIREKTNO KAKO BISMO <br> RAZGOVARALI O VAŠIM CILJEVIMA.
-                    <br>
-                    VAŠ USPEH JE NAŠ PRIORITET!
-                </h3>
+            <div id="app">
+                <div :class="animationClass" class="text-center" :data-animation="animationAttribute">
+                    <h3>
+                        UNAPREDITE SVOJE POSLOVANJE KROZ MODERNU <a class="numberBanner">WEB PRISUTNOST</a>,<br>
+                        <a class="numberBanner">SEO OPTIMIZACIJU</a> ILI ATRAKTIVAN 
+                        <a class="numberBanner">DIZAJN</a>. MI SMO TU DA VAM <br> POMOGNEMO.
+                        KONTAKTIRAJTE NAS DIREKTNO KAKO BISMO <br> RAZGOVARALI O VAŠIM CILJEVIMA.
+                        <br>
+                        VAŠ USPEH JE NAŠ PRIORITET!
+                    </h3>
+                </div>
             </div>
             <div class="row">
                 <div class="col-12 col-lg-6 map text-center">

@@ -20,21 +20,22 @@ $(document).ready(function () {
         // Provera da li je skrolovanje dostiglo ili premašilo 500 piksela
         if (currentScrollPos > 500) {
             // Provera da li korisnik skroluje prema gore
-            if (prevScrollpos > currentScrollPos) {
+            if (prevScrollpos > currentScrollPos + 30) {
                 document.getElementById("top").classList.add("show");
                 document.getElementById("top").classList.add("animation");
                 document.getElementById("top").setAttribute("data-animation", "slideDown");
-            } else {
+            } else if (prevScrollpos < currentScrollPos - 30){
                 document.getElementById("top").removeAttribute("data-animation");
                 document.getElementById("top").classList.remove("show");
                 document.getElementById("top").classList.remove("slideDown");
-                document.getElementById("top").classList.remove("animation");
+                document.getElementById("top").setAttribute("data-animation", "slideUp");
             }
         } else {
             // Ako je skrolovanje manje od 500 piksela, ukloni klasu "show"
             document.getElementById("top").classList.remove("show");
             document.getElementById("top").classList.remove("animation");
             document.getElementById("top").removeAttribute("data-animation");
+            document.getElementById("top").classList.remove("slideDown");
         }
 
         prevScrollpos = currentScrollPos;
@@ -210,9 +211,9 @@ $(document).ready(function () {
         });
 
     }
-    
-    
-    
+
+
+
 
 
     $(window).scroll(function () {
@@ -224,21 +225,32 @@ $(document).ready(function () {
 
 });
 
-const app1 = Vue.createApp({
-    data(){
-        return{
-            name: 'milos'
+const apk1 = Vue.createApp({
+    data() {
+        return {
+            // Adding a reactive property to trigger re-renders
+            updateFlag: false
         };
+    },
+    computed: {
+        animationAttribute() {
+            // Check if the screen width is under 768px
+            if (window.innerWidth > 768) {
+                return 'typewriter';
+            } else {
+                return null;
+            }
+        },
+        animationClass() {
+            // Check if the screen width is under 768px
+            if (window.innerWidth > 768) {
+                return 'animation';
+            } else {
+                return null;
+            }
+        }
     }
+    
 });
-    
-app1.mount('#app');
 
-    
-
-
-
-
-
-
-
+apk1.mount('#app');
