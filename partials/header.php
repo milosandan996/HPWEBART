@@ -39,7 +39,13 @@ $canonicalURL = "https://hp-web-art.rs" . $curent;
         ?>
               ">
         <meta name="keywords" content="web sajt, izrada web sajta, cena izrade sajta, koliko kosta sajt, SEO optimizacija, seo optimizacija sajta, blog">
-
+        <meta property="og:title" content="IZRADA SAJTOVA i SEO OPTIMIZACIJA | HP WEB ART" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hp-web-art.rs" />
+        <meta property="og:description" content="Povoljna cena za izradu Web Sajta, SEO optimizacija, responsive dizajn, grafički dizajn, brending i još mnogo toga..." />
+        <meta property="og:site_name" content="HP Web Art" />
+        <meta property="og:locale" content="sr_RS" />
+        
         <?php
         if ($curent == '/index.php' || $curent == 'http://hp-web-art.rs/index.php' || $curent == 'https://hp-web-art.rs/index.php' || $curent == 'http://www.hp-web-art.rs/' || $curent == 'https://www.hp-web-art.rs/') {
             echo '<link rel="canonical" href="https://hp-web-art.rs">';
